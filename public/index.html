@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Naomi的天氣盒子</title>
+    <link rel="stylesheet" href="./stylesheets/weather.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="daybox">
+      <label>
+        <input id="switch_night" type="checkbox"/>
+        <div class="top">
+          <div class="moon"></div>
+          <div class="cloud">
+            <div class="rain"></div>
+            <div class="rain rain2"></div>
+            <div class="rain rain3"></div>
+          </div>
+          <svg class="temsvg">
+            <circle cx="0" cy="100" r="3"></circle>
+            <circle cx="70" cy="80" r="3"></circle>
+            <circle cx="140" cy="60" r="3"></circle>
+            <circle cx="210" cy="70" r="3"></circle>
+            <circle cx="280" cy="100" r="3"></circle>
+            <circle cx="350" cy="110" r="3"></circle>
+            <circle cx="420" cy="90" r="3"></circle>
+            <circle cx="490" cy="80" r="3"></circle>
+            <circle cx="560" cy="560" r="3"></circle>
+            <polyline points="0,100 70,80 140,60 210,70 280,100 350,110 420,90 490,80 560,560"></polyline>
+          </svg>
+          <div class="text_area">
+            <div class="temperature">28°C</div>
+            <div class="infos">
+              <div class="address">台北市中山區</div>
+              <div id="time"></div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="dayweather">
+            <h3 class="date">?</h3>
+            <svg viewbox="-50 -50 100 100">
+              <circle cx="0" cy="0" r="22" class="sun"></circle>
+            </svg>
+            <h3>28℃</h3>
+          </div>
+          <div class="dayweather">
+            <h3 class="date">?</h3>
+            <svg viewbox="-50 -50 100 100">
+              <circle cx="0" cy="0" r="22" class="sun"></circle>
+            </svg>
+            <h3>28℃</h3>
+          </div>
+          <div class="dayweather">
+            <h3 class="date">?</h3>
+            <svg viewbox="-50 -50 100 100">
+              <circle cx="0" cy="0" r="22" class="sun"></circle>
+              <circle cx="0" cy="30" r="20" class="cloud"></circle>
+              <circle cx="-15" cy="30" r="20" class="cloud"></circle>
+              <circle cx="-30" cy="30" r="20" class="cloud"></circle>
+              <circle cx="-25" cy="10" r="15" class="cloud"></circle>
+              <circle cx="-7" cy="15" r="15" class="cloud"></circle>
+            </svg>
+            <h3>28℃</h3>
+          </div>
+          <div class="dayweather">
+            <h3 class="date">?</h3>
+            <svg viewbox="-50 -50 100 100">
+              <circle cx="0" cy="0" r="22" class="sun"></circle>
+              <circle cx="0" cy="30" r="20" class="cloud"></circle>
+              <circle cx="-15" cy="30" r="20" class="cloud"></circle>
+              <circle cx="-30" cy="30" r="20" class="cloud"></circle>
+              <circle cx="-25" cy="10" r="15" class="cloud"></circle>
+              <circle cx="-7" cy="15" r="15" class="cloud"></circle>
+            </svg>
+            <h3>28℃</h3>
+          </div>
+          <div class="dayweather">
+            <h3 class="date">?</h3>
+            <svg viewbox="-50 -50 100 100">
+              <circle cx="0" cy="0" r="22" class="sun"></circle>
+              <circle cx="0" cy="30" r="20" class="cloud"></circle>
+              <circle cx="-15" cy="30" r="20" class="cloud"></circle>
+              <circle cx="-30" cy="30" r="20" class="cloud"></circle>
+              <circle cx="-25" cy="10" r="15" class="cloud"></circle>
+              <circle cx="-7" cy="15" r="15" class="cloud"></circle>
+            </svg>
+            <h3>28℃</h3>
+          </div>
+          <div class="dayweather">
+            <h3 class="date">?</h3>
+            <svg viewbox="-63 -30 100 100">
+              <circle cx="0" cy="30" r="20" class="cloud"></circle>
+              <circle cx="-15" cy="30" r="20" class="cloud"></circle>
+              <circle cx="-30" cy="30" r="20" class="cloud"></circle>
+              <circle cx="-25" cy="10" r="15" class="cloud"></circle>
+              <circle cx="-7" cy="15" r="15" class="cloud"></circle>
+            </svg>
+            <h3>28℃</h3>
+          </div>
+          <div class="dayweather">
+            <h3 class="date">?</h3>
+            <svg viewbox="-63 -40 100 100">
+              <line x1="-25" y1="15" x2="-25" y2="35" class="rain"></line>
+              <line x1="-14" y1="5" x2="-14" y2="25" class="rain"></line>
+              <line x1="-5" y1="20" x2="-5" y2="45" class="rain"></line>
+              <circle cx="0" cy="30" r="20" class="cloud"></circle>
+              <circle cx="-15" cy="30" r="20" class="cloud"></circle>
+              <circle cx="-30" cy="30" r="20" class="cloud"></circle>
+              <circle cx="-25" cy="10" r="15" class="cloud"></circle>
+              <circle cx="-7" cy="15" r="15" class="cloud"></circle>
+            </svg>
+            <h3>28℃</h3>
+          </div>
+        </div>
+      </label>
+    </div>
+    <script src="./javascripts/index.js"></script>
+  </body>
+</html>
